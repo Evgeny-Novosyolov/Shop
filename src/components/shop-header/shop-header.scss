@@ -1,0 +1,40 @@
+a {
+    text-decoration: none;
+}
+
+.shop{
+    &__header {
+        width: 100%;
+        background: #F0F3F4;
+        padding: 20px;
+    }
+    
+    &__menu{
+        display: flex;
+    }
+    &__link, .icon{
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 1;
+        margin-right: 20px;
+        padding: 5px;
+        color: #00CCAD;
+        cursor: pointer;
+        color: #333333;
+        text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+        transition: all 0.5s 0.1s ease-in-out;
+        &:hover{
+
+            color: #fff;
+            text-shadow: 2px 2px 0px #333, 5px 4px 0px rgba(0,0,0,0.15);
+            .icon{
+                color: #333333;
+            }
+        }
+        .icon{
+            color: #333333;
+        }
+    }
+
+   
+}

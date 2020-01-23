@@ -1,0 +1,50 @@
+.filter{
+    flex: 1 0 300px;
+    padding: 20px;
+
+    &__search{
+        font-family: 'Pacifico', cursive;
+        background: transparent;
+        border: none;
+        outline: none;
+        margin: 20px 0px 20px 0px;
+        font-size: 28px;
+        font-weight: 600;
+        position: relative;
+        padding: 10px;
+        // background: #000;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        display: flex;
+    }
+    &__search-wrapper{
+        display: flex;
+        margin: auto;
+        overflow: hidden;
+        transition: all 0.5s;
+        cursor: pointer;
+        position: relative;
+        width: 50px;
+        height: 50px;
+        
+    }
+    &__search-item{
+        position: absolute;
+        top: 0;
+        left: 15%;
+        transition: all 0.5s ease-in-out 0.1s;
+    }
+    &__icon {
+        font-size: 40px;
+        color: #2DFF1C;
+        &.bottom{
+            color: red;
+        }
+    }
+}
+
+.search--true span{
+    transform: translateY(-50%);
+
+}
